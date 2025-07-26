@@ -144,6 +144,43 @@ body,html{
    font-size: 1.5vw;
    font-weight: 100;
 }
+#scroll{
+    height: 30vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    background-color: #F8F8F8;;  
+    padding: 1vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
-
-
+.collect{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.collect img{
+    
+    height: 100%;
+    border-radius: 50%;
+    width: 15vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+    /* display: none; */
+    margin-right:0.9vw ;
+}
+@keyframes anime {
+    to{
+        transform: translateX(0);
+    }
+    from{
+        transform: translateX(-100%);
+    }
+    
+}
